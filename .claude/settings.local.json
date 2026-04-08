@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /g/VSCodeProyects/zorcedev.github.io log --oneline -10)"
+    ]
+  }
+}
