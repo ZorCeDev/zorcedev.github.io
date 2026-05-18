@@ -46,8 +46,9 @@ nav {
   -webkit-backdrop-filter: blur(16px);
 }
 
-.logo { font-family: var(--mono); font-size: 0.95rem; color: var(--accent); text-decoration: none; font-weight: 500; }
+.logo { font-family: var(--mono); font-size: 0.95rem; color: var(--accent); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 0.6rem; }
 .logo em { color: var(--muted); font-style: normal; }
+.logo-icon { width: 26px; height: 26px; border-radius: 6px; display: block; image-rendering: pixelated; image-rendering: crisp-edges; }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
 .nav-links a { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); text-decoration: none; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.2s; font-weight: 400; }
 .nav-links a:hover { color: var(--text); }
@@ -243,7 +244,8 @@ section { padding: 6rem 4rem; }
 .links-hero { text-align: center; padding: 9rem 2rem 3rem; position: relative; overflow: hidden; background-image: var(--grid-bg); background-position: center; }
 .links-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, var(--bg) 100%); pointer-events: none; }
 .links-hero > * { position: relative; z-index: 1; }
-.links-avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--surface); border: 1px solid var(--border); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-family: var(--mono); color: var(--accent); font-weight: 500; box-shadow: 0 0 0 4px var(--accent-tint); }
+.links-avatar { width: 84px; height: 84px; border-radius: 50%; background: var(--surface); border: 1px solid var(--border); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 0 0 4px var(--accent-tint); }
+.links-avatar img { width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; image-rendering: crisp-edges; }
 .links-name { font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em; }
 .links-tagline { color: var(--muted); font-family: var(--mono); font-size: 0.75rem; margin-top: 0.4rem; letter-spacing: 0.08em; }
 .links-list { max-width: 480px; margin: 0 auto; padding: 1rem 2rem 4rem; display: flex; flex-direction: column; gap: 0.75rem; }
